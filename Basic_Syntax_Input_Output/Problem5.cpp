@@ -1,16 +1,16 @@
 /*
-✅Problem 4: Write a program to swap two numbers using a third variable.
+✅Problem 5: Write a program to swap two numbers without using a third variable.
 
  */
 #include <iostream>
 using namespace std;
 int main(){
-    int a, b, c=0;
+    int a, b;
     cout << "Enter two numbers: ";
     cin >> a >> b;
-    c = a;
-    a = b;
-    b = c;
+    a = a + b;
+    b = a - b;
+    a = a - b;
     cout << "After swapping: " << a << " " << b;
     return 0;
 }
